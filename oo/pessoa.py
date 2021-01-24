@@ -27,3 +27,11 @@ if __name__ == '__main__':
 
     for filho in maia.filhos:
         print(filho.nome)
+
+    maia.sobrenome = 'Ramalho'
+    print('Nome completo', maia.nome, maia.sobrenome)
+
+    del maia.filhos
+
+    print(maia.__dict__)
+    print(fabiano.__dict__)
